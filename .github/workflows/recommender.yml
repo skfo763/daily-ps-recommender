@@ -9,13 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8.2
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8.2
     - name: Activate Virtual Environment
       run: |
-        source ./bin/activate
+        source bin/activate
     - name: Run Script
       run: |
-        python3 ./src/recommender.py
+        python ./src/recommender.py
