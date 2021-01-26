@@ -14,4 +14,4 @@ jobs:
         source bin/activate
     - name: Run Script
       run: |
-        python ./src/recommender.py
+        python3 ./src/recommender.py
