@@ -13,12 +13,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8.2
-    - name: Create Virtual Environment
+    - name: Activate Virtual Environment
       run: |
-        python -m venv venv
-        source venv/bin/activate
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        source ./bin/activate
     - name: Run Script
       run: |
         python3 ./src/recommender.py
