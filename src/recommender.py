@@ -11,7 +11,6 @@ class Tier(Enum):
     GOLD = "11,12,13,14,15"
     PLATINUM = "16,17,18,19,20"
     DIAMOND = "21,22,23,24,25"
-    # RUBY 는 없습니다. 제가 절대 풀 수가 없기 때문이죠.
 
 
 class Problem:
