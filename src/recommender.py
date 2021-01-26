@@ -32,7 +32,7 @@ class DataMiner:
         self.base_url = "https://www.acmicpc.net"
 
     def _get_url(self, path):
-        return f"{self.base_url}/{path}"
+        return self.base_url + path
 
     @staticmethod
     def parse_into_problem(soup):
