@@ -23,7 +23,7 @@ class Problem:
         self.correct_rate = td_list[-1].get_text()
 
     def get_problem_link(self):
-        return f"{self.base_url}{self.href}"
+        return self.base_url + self.href
 
 
 class DataMiner:
