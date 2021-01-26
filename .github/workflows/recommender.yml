@@ -12,6 +12,7 @@ jobs:
     - name: Activate Virtual Environment
       run: |
         source bin/activate
+        pip install bs4
     - name: Run Script
       run: |
         python3 ./src/recommender.py
